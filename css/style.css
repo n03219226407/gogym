@@ -1,0 +1,224 @@
+*{
+	margin: 0;
+	padding: 0; 
+	border: 0;
+}
+
+body{
+	background: #f0f0f0;
+	color: #555555;
+	margin: 0;
+	font:14px/26px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color:white;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+header{
+	background: #873131;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: 100;
+	opacity: 0.90;
+	width: 100%;
+	height: 86px;
+}
+
+#logo{
+	float: left;
+	background: url(../img/the-gym.png);
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+}
+
+#menu-icon{
+	display: none;
+	width: 40px;
+	height: 40px;
+	background: url(../img/icon.png) center;
+}
+
+nav{
+	float: right ;
+	padding: 32px 23px 20px 0;
+}
+
+ul{
+	list-style: none;
+}
+
+nav ul li{
+	float: left;
+	display: inline-block;
+	padding: 10px;
+}
+
+.current{
+	text-decoration: underline;
+}
+
+
+/*******************************Slider ************************************/
+#slider{
+	margin: 40px;
+}
+
+.container{
+	max-width: 1014px;
+	margin: 0 auto;
+}
+
+.blueberry{
+	max-width: 960px;
+	margin-top: 114px;
+}
+
+
+
+/*****************************************************************************/
+section{
+	width: 29%;
+	float: left;
+	margin: 2%;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	line-height: 50px;
+}
+
+p{
+	padding: 1%;
+	line-height: 22px;
+}
+
+i{
+	width: auto;
+	height: auto;
+	text-align: center;
+	margin: 1% 0;
+}
+
+.clear{
+	clear: both;
+}
+
+article{
+	width: 50%;
+	float: left;
+	margin: 0;
+	text-align: center;
+	padding: 3%;
+}
+
+img{
+	max-width: 100%;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+aside{
+	width: 35%;
+	float: right;
+	padding: 4%;
+}
+h2{
+	text-decoration: underline;
+	line-height: 280%;
+}
+
+h3{
+	line-height: 290%;
+}
+
+h4{
+	font-size: 20px;
+	line-height: 250%;
+}
+
+footer{
+	background-color: #542a32;
+	opacity: 0.90;
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+footer h4, footer p{
+	color: white;
+}
+
+footer ul.social li{
+	display: inline;
+}
+
+footer.sec{
+	background-color: #3d3d3d;
+	color: white;
+	text-align: center;
+	border-top: 1px solid #ccc;
+}
+/*----------------------------------------Media Query------------------------------------------------*/
+@media screen and (max-width: 278px){
+	body{
+		position: absolute;
+	}
+}
+@media only screen and (max-width: 786px){
+	header{
+		position: absolute;
+	}
+	#menu-icon{
+		display:inline-block;
+	}
+	nav:hover ul{
+		display:block;
+		-webkit-transition: all .5s ease;
+		   -moz-transition: all .5s ease;
+		    -ms-transition: all .5s ease;
+		     -o-transition: all .5s ease;
+		        transition: all .5s ease;
+	}
+	nav ul, nav:active ul{
+		display:none;
+		position: absolute;
+		width:50%;
+		top:50px;
+		right:20px;
+		background-color: #914343;
+		border:1px solid white;
+		border-radius:4px 0 4px 4px;
+		padding:20px;
+	}
+	nav ul li{
+		width:100%;
+		text-align: center;
+		margin: 0;
+		padding:10px;
+		transition:all 0.5s;
+	}
+
+	section, aside, article{
+		width: 100%;
+		margin: 0;
+     	padding: 5% 0 0 0;
+		text-align: center;
+		float: left;
+
+	}
+
+
+}
+
